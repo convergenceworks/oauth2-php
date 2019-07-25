@@ -32,6 +32,7 @@ class OAuth2ServerException extends \Exception
 
         $this->errorData['error'] = $error;
         $this->errorData['error_description'] = $errorDescription;
+        $this->errorData = new \stdClass();
     }
 
     /**
